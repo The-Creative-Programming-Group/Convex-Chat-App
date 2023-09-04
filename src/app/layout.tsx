@@ -1,7 +1,7 @@
 import "~/styles/globals.css";
 import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
-import ConvexClientProvider from "~/app/ConvexClientProvider";
+import ConvexClientProvider from "~/ConvexClientProvider";
 
 const inter = Inter({
   subsets: ["latin"],
