@@ -6,7 +6,6 @@ import {
   FormControl,
   FormField,
   FormItem,
-  FormMessage,
 } from "~/ui/ui/form";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -59,6 +58,8 @@ export default function HomePage() {
         behavior: "smooth",
       });
     }
+  // I want to run this only when chats change, it will automatically update the scrollToBottom state
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [chats]);
 
   const handleSubmit = async ({ text }: z.infer<typeof formSchema>) => {
