@@ -45,7 +45,7 @@ export const post = mutation({
         text: message,
         user: user?._id,
       });
-      
+
       return data;
     }
 

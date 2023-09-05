@@ -1,12 +1,7 @@
 "use client";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-} from "~/ui/ui/form";
+import { Form, FormControl, FormField, FormItem } from "~/ui/ui/form";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -58,8 +53,8 @@ export default function HomePage() {
         behavior: "smooth",
       });
     }
-  // I want to run this only when chats change, it will automatically update the scrollToBottom state
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // I want to run this only when chats change, it will automatically update the scrollToBottom state
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [chats]);
 
   const handleSubmit = async ({ text }: z.infer<typeof formSchema>) => {
