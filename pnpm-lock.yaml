@@ -1,5 +1,9 @@
 lockfileVersion: "6.0"
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   "@hookform/resolvers":
     specifier: ^3.3.1
@@ -52,8 +56,8 @@ devDependencies:
     specifier: ^8.37.0
     version: 8.44.2
   "@types/node":
-    specifier: ^18.16.0
-    version: 18.17.14
+    specifier: ^20.0.0
+    version: 20.8.8
   "@types/prettier":
     specifier: ^2.7.2
     version: 2.7.3
@@ -830,11 +834,13 @@ packages:
       }
     dev: true
 
-  /@types/node@18.17.14:
+  /@types/node@20.8.8:
     resolution:
       {
-        integrity: sha512-ZE/5aB73CyGqgQULkLG87N9GnyGe5TcQjv34pwS8tfBs1IkCh0ASM69mydb2znqd6v0eX+9Ytvk6oQRqu8T1Vw==,
+        integrity: sha512-YRsdVxq6OaLfmR9Hy816IMp33xOBjfyOgUd77ehqg96CFywxAPbDbXvAsuN2KVg2HOT8Eh6uAfU+l4WffwPVrQ==,
       }
+    dependencies:
+      undici-types: 5.25.3
     dev: true
 
   /@types/prettier@2.7.3:
@@ -4165,6 +4171,13 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
+  /undici-types@5.25.3:
+    resolution:
+      {
+        integrity: sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==,
+      }
+    dev: true
+
   /update-browserslist-db@1.0.11(browserslist@4.21.10):
     resolution:
       {
@@ -4334,7 +4347,3 @@ packages:
         integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==,
       }
     dev: false
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
